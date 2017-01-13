@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:gravity="center_horizontal" >
+
+<TableLayout android:id="@+id/play_grid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <TableRow android:gravity="center_horizontal">
+            <Button android:textSize="40sp" android:id="@+id/one" android:layout_width="90dp" android:layout_height="90dp"/>
+            <Button android:textSize="40sp" android:id="@+id/two" android:layout_width="90dp" android:layout_height="90dp"  />
+            <Button android:textSize="40sp" android:id="@+id/three" android:layout_width="90dp" android:layout_height="90dp" />
+            
+     
+        </TableRow>
+     <TableRow android:gravity="center_horizontal">
+           <Button android:textSize="40sp" android:id="@+id/four" android:layout_width="90dp" android:layout_height="90dp"  />
+            <Button android:textSize="40sp" android:id="@+id/five" android:layout_width="90dp" android:layout_height="90dp"/>
+            <Button android:textSize="40sp" android:id="@+id/six" android:layout_width="90dp" android:layout_height="90dp" />
+            
+          
+        </TableRow>
+    <TableRow android:gravity="center_horizontal">
+            <Button android:textSize="40sp" android:id="@+id/seven" android:layout_width="90dp" android:layout_height="90dp"  />
+            <Button android:textSize="40sp" android:id="@+id/eight" android:layout_width="90dp" android:layout_height="90dp"/>
+            <Button android:textSize="40sp" android:id="@+id/nine" android:layout_width="90dp" android:layout_height="90dp" />
+            
+           
+        </TableRow>
+
+    </TableLayout>
+    
+     <Button android:textSize="20sp" android:text="@+string/RESET"   android:id="@+id/clear" android:layout_width="fill_parent" android:layout_height="78dp" />
+     <Button android:textSize="20sp" android:text="@+string/back"   android:id="@+id/back" android:layout_width="fill_parent" android:layout_height="78dp" />
+     <TextView android:textSize="40sp" android:gravity="bottom" android:id="@+id/information" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+   
+</LinearLayout>
+          
+     

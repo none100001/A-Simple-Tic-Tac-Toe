@@ -1,0 +1,136 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3470), pid=3460, tid=3136
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 7.0-b147
+# Java VM: Java HotSpot(TM) Client VM (21.0-b17 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x024e9400):  JavaThread "Unknown thread" [_thread_in_vm, id=3136, stack(0x02060000,0x020b0000)]
+
+Stack: [0x02060000,0x020b0000],  sp=0x020aefb0,  free space=315k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1630e1]
+V  [jvm.dll+0x15dcfb]
+V  [jvm.dll+0x18e37]
+V  [jvm.dll+0x1a6a8]
+V  [jvm.dll+0x2a42f]
+V  [jvm.dll+0x2b818]
+V  [jvm.dll+0x2bedb]
+V  [jvm.dll+0x2bf2a]
+V  [jvm.dll+0x2c07d]
+V  [jvm.dll+0x2c15a]
+V  [jvm.dll+0x2c3d7]
+V  [jvm.dll+0x73cb1]
+V  [jvm.dll+0x7406b]
+V  [jvm.dll+0x121a7c]
+V  [jvm.dll+0x14382a]
+V  [jvm.dll+0xa2940]
+C  [javaw.exe+0x1359]
+C  [javaw.exe+0x1dc9]
+C  [javaw.exe+0xa0cb]
+C  [javaw.exe+0xa155]
+C  [KERNEL32.DLL+0x1919f]  BaseThreadInitThunk+0xe
+C  [ntdll.dll+0x5b54f]  RtlInitializeExceptionChain+0x8f
+C  [ntdll.dll+0x5b51a]  RtlInitializeExceptionChain+0x5a
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x024e9400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=3136, stack(0x02060000,0x020b0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00370000 - 0x0039f000 	C:\Program Files (x86)\Java\jre7\bin\javaw.exe
+0x779c0000 - 0x77b2e000 	C:\Windows\SYSTEM32\ntdll.dll
+0x75b90000 - 0x75cd0000 	C:\Windows\SYSTEM32\KERNEL32.DLL
+0x75a00000 - 0x75ad0000 	C:\Windows\SYSTEM32\KERNELBASE.dll
+0x6cbc0000 - 0x6cc59000 	C:\Windows\system32\apphelp.dll
+0x669f0000 - 0x66c49000 	C:\Windows\AppPatch\AcGenral.DLL
+0x758e0000 - 0x7599e000 	C:\Windows\SYSTEM32\msvcrt.dll
+0x77890000 - 0x778ce000 	C:\Windows\SYSTEM32\sechost.dll
+0x752b0000 - 0x752cd000 	C:\Windows\SYSTEM32\SspiCli.dll
+0x77350000 - 0x77391000 	C:\Windows\SYSTEM32\SHLWAPI.dll
+0x70180000 - 0x7025b000 	C:\Windows\SYSTEM32\UxTheme.dll
+0x752e0000 - 0x7542c000 	C:\Windows\SYSTEM32\USER32.dll
+0x773a0000 - 0x774a7000 	C:\Windows\SYSTEM32\GDI32.dll
+0x751b0000 - 0x751d0000 	C:\Windows\SYSTEM32\WINMM.dll
+0x669d0000 - 0x669e2000 	C:\Windows\SYSTEM32\samcli.dll
+0x77130000 - 0x7723c000 	C:\Windows\SYSTEM32\ole32.dll
+0x757a0000 - 0x75835000 	C:\Windows\SYSTEM32\OLEAUT32.dll
+0x6c040000 - 0x6c055000 	C:\Windows\SYSTEM32\MSACM32.dll
+0x75230000 - 0x75238000 	C:\Windows\SYSTEM32\VERSION.dll
+0x75df0000 - 0x7709c000 	C:\Windows\SYSTEM32\SHELL32.dll
+0x75200000 - 0x75219000 	C:\Windows\SYSTEM32\USERENV.dll
+0x6cb40000 - 0x6cb58000 	C:\Windows\SYSTEM32\dwmapi.dll
+0x6d270000 - 0x6d3bb000 	C:\Windows\SYSTEM32\urlmon.dll
+0x75ad0000 - 0x75b48000 	C:\Windows\SYSTEM32\ADVAPI32.dll
+0x750d0000 - 0x7512e000 	C:\Windows\SYSTEM32\WINSPOOL.DRV
+0x75190000 - 0x751a4000 	C:\Windows\SYSTEM32\MPR.dll
+0x77240000 - 0x772f0000 	C:\Windows\SYSTEM32\RPCRT4.dll
+0x752a0000 - 0x752a9000 	C:\Windows\SYSTEM32\CRYPTBASE.dll
+0x77690000 - 0x777de000 	C:\Windows\SYSTEM32\combase.dll
+0x75080000 - 0x750a0000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x750a0000 - 0x750ae000 	C:\Windows\SYSTEM32\profapi.dll
+0x74770000 - 0x749a2000 	C:\Windows\SYSTEM32\iertutil.dll
+0x74ba0000 - 0x74d75000 	C:\Windows\SYSTEM32\WININET.dll
+0x75240000 - 0x75292000 	C:\Windows\SYSTEM32\bcryptPrimitives.dll
+0x75b50000 - 0x75b8a000 	C:\Windows\SYSTEM32\cfgmgr32.dll
+0x75060000 - 0x7507f000 	C:\Windows\SYSTEM32\DEVOBJ.dll
+0x74fd0000 - 0x7505b000 	C:\Windows\SYSTEM32\SHCORE.DLL
+0x777e0000 - 0x77805000 	C:\Windows\system32\IMM32.DLL
+0x75cd0000 - 0x75de2000 	C:\Windows\SYSTEM32\MSCTF.dll
+0x6c280000 - 0x6c2ae000 	C:\Users\Rajkin\AppData\Local\Linkey\IEEXTE~1\iedll.dll
+0x749b0000 - 0x74b96000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17031_none_a9efdb8b01377ea7\COMCTL32.dll
+0x5fa50000 - 0x5fb0e000 	C:\Program Files (x86)\Java\jre7\bin\msvcr100.dll
+0x66dc0000 - 0x670e1000 	C:\Program Files (x86)\Java\jre7\bin\client\jvm.dll
+0x75220000 - 0x75228000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x752d0000 - 0x752d6000 	C:\Windows\SYSTEM32\PSAPI.DLL
+0x77300000 - 0x7734d000 	C:\Windows\SYSTEM32\WS2_32.dll
+0x772f0000 - 0x772f7000 	C:\Windows\SYSTEM32\NSI.dll
+0x6a560000 - 0x6a56c000 	C:\Program Files (x86)\Java\jre7\bin\verify.dll
+0x69ae0000 - 0x69b00000 	C:\Program Files (x86)\Java\jre7\bin\java.dll
+0x69ac0000 - 0x69ad3000 	C:\Program Files (x86)\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath:G:\tools\adt-bundle-windows-x86-20130917\sdk\platforms\android-8\android.jar 
+java_command: AndroidTicTacToeActivity
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_25
+PATH=C:/Program Files (x86)/Java/jre7/bin/client;C:/Program Files (x86)/Java/jre7/bin;C:/Program Files (x86)/Java/jre7/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;D:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Git\cmd;C:\ruby-1.9.3\bin;D:\Program Files (x86)\Heroku\ruby-1.9.3\bin;C:\Users\Rajkin\atlassian-plugin-sdk\bin;G:\adt-bundle-windows-x86-20130917\eclipse;
+USERNAME=Rajkin
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.2 Build 9200 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 4072000k(1622196k free), swap 6300224k(3379224k free)
+
+vm_info: Java HotSpot(TM) Client VM (21.0-b17) for windows-x86 JRE (1.7.0-b147), built on Jun 27 2011 02:25:52 by "java_re" with unknown MS VC++:1600
+
+time: Sun Mar 15 21:03:26 2015
+elapsed time: 0 seconds
+
