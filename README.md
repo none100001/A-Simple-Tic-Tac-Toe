@@ -1,0 +1,2 @@
+# A-Simple-Tic-Tac-Toe
+It’s an android based game. It’s 3X3 Tic Tac Toe game using MiniMax Algorithm and alpha beta pruning. This game has four modes which are: Legendary, Hard, SemiPro and Easy modes. This game is created in easy mode as user will win for any turns. If any blind human play in easy mode, he will also win definitely. Semi pro mode are also easier in rare case user can lose also. In Hard mode for user it's also so much difficult to win but the in the last mode called Legendary mode it's impossible to win the game.
