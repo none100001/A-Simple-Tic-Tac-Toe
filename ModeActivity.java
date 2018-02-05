@@ -1,6 +1,3 @@
-package com.rajkin3.tictactoe;
-
-
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,113 +7,62 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class ModeActivity extends Activity {
-	public Button leg;
-	public Button har;
-	public Button sem;
-	public Button eas;
-	
+	public Button legendary;
+	public Button hard;
+	public Button semipro;
+	public Button easy;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_mode);
 		
-		leg = (Button) findViewById(R.id.leg);
-		leg.setOnClickListener(new A());
+		legendary = (Button) findViewById(R.id.leg);
+		legendary.setOnClickListener(new A());
 		
-		har = (Button) findViewById(R.id.har);
-		har.setOnClickListener(new B());
+		hard = (Button) findViewById(R.id.har);
+		hard.setOnClickListener(new B());
 		
-		sem = (Button) findViewById(R.id.sem);
-		sem.setOnClickListener(new C());
+		semipro = (Button) findViewById(R.id.sem);
+		semipro.setOnClickListener(new C());
 		
-		eas = (Button) findViewById(R.id.eas);
-		eas.setOnClickListener(new D());
+		easy = (Button) findViewById(R.id.eas);
+		easy.setOnClickListener(new D());
 	}
 	
-	
 	 class A implements OnClickListener {
-	        A() {
-	        }
-
-	        public void onClick(View v) {
-	        	
+	        A() { }
+	        public void onClick(View v) {	
 	            Intent i = new Intent(ModeActivity.this, AndroidTicTacToeActivity.class);
 	            i.putExtra("level", "9");
-	            //ModeActivity.this.startActivity(i);
 	            startActivity(i);
 	        }
 	 }
 	 
-	 
-	 
-	 
-	 
-	 
 	 class B implements OnClickListener {
-	        B() {
-	        }
-
+	        B() { }
 	        public void onClick(View v) {
-	        	
 	            Intent i = new Intent(ModeActivity.this, AndroidTicTacToeActivity.class);
 	            i.putExtra("level", "6");
 	            startActivity(i);
 	        }
 	 }
 	 
-	 
-	 
-	 
-	 
-	 
-	 
 	 class C implements OnClickListener {
-	        C() {
-	        }
-
+	        C() { }
 	        public void onClick(View v) {
-	        	
 	            Intent i = new Intent(ModeActivity.this, AndroidTicTacToeActivity.class);
 	            i.putExtra("level", "4");
-	            //ModeActivity.this.startActivity(i);
 	            startActivity(i);
 	        }
 	 }
-	 
-	 
-	 
-	 
-	 
-	 
-	 
 	 
 	 class D implements OnClickListener {
-	        D() {
-	        }
-
+	        D() { }
 	        public void onClick(View v) {
-	        	
 	            Intent i = new Intent(ModeActivity.this, AndroidTicTacToeActivity.class);
 	            i.putExtra("level", "2");
-	            //ModeActivity.this.startActivity(i);
 	            startActivity(i);
 	        }
 	 }
-	
-	
-	
-	
-	
 }
-
-
-
-
-
-
-
-
-
-
-
